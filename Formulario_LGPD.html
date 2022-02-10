@@ -1,0 +1,116 @@
+<!DOCTYPE html5">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FORMULÁRIO LGPD</title>
+    <style type="text/css">
+    <!--
+    .style1 {
+    color: #FF0000;
+    font-size: x-small;
+    }
+    .style3 {color: #0000FF; font-size: x-small; }
+    -->
+    </style>
+
+    </head>
+    <h2>Formulário LGPD</h2>
+    <body>
+        <form method="post" action="envia_email.php">
+            <table width="625" border="0">
+                <tr>
+                    <td width="90">Requisitando:</td>
+                        
+                    </td>
+                    <td>
+                        <select name="txtreq">
+                        <option value="Para mim?">Para mim?</option>
+                        <option value="Para outra pessoa?">Para outra Pessoa?</option>
+                        </select>    
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td  width="90">Você é / foi ?:</td>
+                        <td>
+                            <select name="txtvc">
+                            <option value="Cliente?">Cliente?</option>
+                            <option value="Colaborador?">Colaborador?</option>
+                            <option value="Outros?">Outro?</option>
+                            </select>    
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69">Nome:</td>
+                    <td width="546"><input name="txtnome" type="text" id="nome" size="128" maxlength="60" />
+                    <span class="style1">*</span></td>
+                </tr>
+                <tr>
+                    <td width="69">Nº CPF:</td>
+                    <td width="546"><input name="txtCPF" type="text" id="nome" size="128" maxlength="60" />
+                    <span class="style1">*</span></td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input name="txtemail" type="text" id="email" size="128" maxlength="60" />
+                    <span class="style1">*</span></td>
+                </tr>
+                
+                <tr>
+                    <td width="190">Tipo de Requisição:</td>
+                        <td>
+                            <select name="txtTipo">
+                                <option value="Direito à confirmação da existência de tratamento 
+                                ">Direito à confirmação da existência de tratamento 
+                                </option>
+                                <option value="Direito de acesso ">Direito de acesso</option>
+                                <option value="Direito de correção de dados incompletos, inexatos ou desatualizados "
+                                >Direito de correção de dados incompletos, inexatos ou desatualizados 
+                                </option>
+                                <option value="Direito à anonimização, ao bloqueio ou à eliminação de dados desnecessários, 
+                                excessivos ou tratados em desconformidade com a LGPD (indicar abaixo)">
+                                Direito à anonimização, ao bloqueio ou à eliminação de dados desnecessários, 
+                                excessivos ou tratados em desconformidade com a LGPD (indicar abaixo)
+                                </option>
+                                <option value="Direito à portabilidade (indicar abaixo a forma e o 
+                                destinatário da transferência)">Direito à portabilidade 
+                                (indicar abaixo a forma e o destinatário da transferência)
+                                </option>
+                                <option value="Direito à informação sobre possibilidade de oposição ao 
+                                consentimento e consequências">Direito à informação sobre possibilidade 
+                                de oposição ao consentimento e consequências
+                                </option>
+                                <option value="Direito de oposição – indicar o(s) tratamento(s) a que se opõe">
+                                Direito de oposição – indicar o(s) tratamento(s) a que se opõe    
+                                </option>
+                                <option value="Direito à revogação do consentimento dado para tratar seus dados pessoais">
+                                    Direito à revogação do consentimento dado para tratar seus dados pessoais
+                                </option>
+                                <option value="Direito à informação das entidades com as quais compartilhamos seus dados pessoais">
+                                    Direito à informação das entidades com as quais compartilhamos seus dados pessoais
+                                </option>
+                                <option value="Direito à revisão de decisão automatizada (indicar abaixo qual decisão)">
+                                    Direito à revisão de decisão automatizada (indicar abaixo qual decisão)
+                                </option>
+                                <option value="Direito à eliminação dos dados tratados com seu consentimento">
+                                    Direito à eliminação dos dados tratados com seu consentimento
+                                </option>
+                            </select>    
+                        </td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Detalhe:</td>
+                    <td><textarea name="txtDetalhe" rows="10" cols="125" maxlength="500"></textarea></td>
+                </tr> 
+                <tr>
+                <td colspan="2"><p>
+                <input name="Enviar Solicitação" type="submit" value="Enviar Solicitação" />
+                <br />         
+            </table>
+        </form>
+    </body>
+</html>
