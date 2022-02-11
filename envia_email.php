@@ -1,7 +1,6 @@
 <?php
 
 // Gerar Nº do envio
-// Verifica se contagem.php existe
 
 if( file_exists('contagem.php'))
 {
