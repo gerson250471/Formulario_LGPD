@@ -1,6 +1,6 @@
 <?php
 
-// Gerar Nº do envio
+// Gerar Requisição Nº do envio
 
 if( file_exists('contagem.php'))
 {
@@ -9,7 +9,7 @@ if( file_exists('contagem.php'))
 // Salva o proximo número no contagem.php (apagando a informação anterior e salvando o proximo número).
 file_put_contents('contagem.php', '<?php $contagem='.((int)$contagem+1).' ?>');
 
-$os = 'OS: ' . date("Ymd") . str_pad($gerador = (int)$contagem,5,'0',STR_PAD_LEFT);
+$os = date("Ymd") . str_pad($gerador = (int)$contagem,5,'0',STR_PAD_LEFT);
 
 // Obtendo os Dados do Formulário
 $req =utf8_decode($_POST['txtreq']);
@@ -51,8 +51,10 @@ try
     $mail->isHTML(true);                              
     $mail->Subject = utf8_decode('Formulário LGPD');
     $mail->Body    = utf8_decode("
-    $os <br>
+	Requisição Nº " . $os ." <br>
+    ======================================<br>
     FORMULÁRIO LGPD <br>
+    ======================================<br>
     Requisitando =          $req      <br>
     Você é ou foi? =        $vce      <br>
     Nome =                  $nome     <br>
